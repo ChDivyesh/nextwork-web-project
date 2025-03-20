@@ -1,0 +1,12 @@
+.h1 {
+    font-size: 15;
+    font-style: italic;
+    flex: center;
+
+}
+
+.p {
+    font-size: 15;
+    font-style: italic;
+    flex: center;
+}
