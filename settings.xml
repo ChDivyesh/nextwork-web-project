@@ -1,0 +1,31 @@
+<settings>
+<servers>
+  <server>
+    <id>demoartifact-demoartifactbuild</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>demoartifact-demoartifactbuild</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>demoartifact-demoartifactbuild</id>
+        <url>https://demoartifact-024848457874.d.codeartifact.us-east-1.amazonaws.com/maven/demoartifactbuild/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>demoartifact-demoartifactbuild</id>
+    <name>demoartifact-demoartifactbuild</name>
+    <url>https://demoartifact-024848457874.d.codeartifact.us-east-1.amazonaws.com/maven/demoartifactbuild/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
